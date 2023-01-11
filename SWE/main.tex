@@ -22,6 +22,7 @@
 \usepackage{multicol}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
+\setlength{\footskip}{4.08003pt}
 \input{glyphtounicode}
 
 
@@ -58,7 +59,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
+  \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -137,20 +138,14 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Warsaw University}{Oct. 2020 -- Ongoing}
-      {Bachelor of Science in Computer Science}{Warsaw, Poland}
+{Bachelor of Science in Computer Science, }{Warsaw, Poland}
       \resumeItemListStart
         \resumeItem{Top rated CS undergraduate program in Poland according to QS ranking.}
         \resumeItem{1st-year modules: Functional Programming, OOP, C, Introduction to AI, Linear Algebra.}
-        \resumeItem{2nd-year modules: Adv. Algorithms, Databases, Computer networks, Web Apps, Statistics with R.}
-      \resumeItemListEnd
-  
-    \resumeSubheading
-      {Warsaw University}{Oct. 2020 -- Ongoing}
-      {Bachelor of Arts in Cognitive Science \& Philosophy}{Warsaw, Poland}
-      \resumeItemListStart
-        \resumeItem{1st-year modules:  Brain anatomy, Linguistics, Introduction to Cognitive Science.}
-        \resumeItem{2nd-year modules: Contemporary continental philosophy, Epistemology, NLP.}
-    \resumeItemListEnd
+\resumeItem{2nd-year modules: Adv. Algorithms, Databases, Computer networks, Web Apps, Statistics, NLP.}
+\resumeItem{3rd-year modules: Distributed systems, Concurrency theory,  Security of computer systems.}
+
+\resumeItemListEnd
   \resumeSubHeadingListEnd
   \vspace{-16pt}
 
@@ -173,8 +168,7 @@
       {Software Engineer Intern $|$  Python, Postgre, Git, SQL, Pytorch}{Warsaw, Poland}
       \resumeItemListStart
         \resumeItem{40+ sprints under the Scrum development framework in a rapidly growing team.}
-        \resumeItem{Worked on a back-end implementation of a betting hints generator that withstood 100k API calls daily.}
-        \resumeItem{Collaborated on betting-odds concurrent web scraper using HTTPX and Scrapy.}
+\resumeItem{Worked on a back-end implementation of a betting hints generator that withstood 100k API calls daily.}
         \resumeItem{Created a deep learning NLP module using cutting-edge architectures such as BERT.}
         \resumeItem{NLP module tackled the problem of context-dependent noun declination in Slavic languages.}
       \resumeItemListEnd
@@ -183,10 +177,8 @@
       {Bain \& Company}{Mar. 2021 - Apr. 2021}
       {Spring Intern $|$ Nielsen, Ipsos, Bain's overlay for MS Office}{Warsaw, Poland}
       \resumeItemListStart
-        \resumeItem{Supported a consulting team in the area of wood market data analysis.}
-        \resumeItem{Took part in a series of workshops conducted by Bain consultants on M\&A and consulting frameworks.}
-        \resumeItem{Worked on a team-based business case study under the supervision of a dedicated mentor.}
-        \resumeItem{Presented results of the case study to a board of partners.}
+\resumeItem{Supported a consulting team in the area of wood market data analysis.}
+\resumeItem{Worked on a team-based business case study under the supervision of a dedicated mentor.}
     \resumeItemListEnd
     
   \resumeSubHeadingListEnd
@@ -196,7 +188,15 @@
 \section{Projects}
     \vspace{-5pt}
     \resumeSubHeadingListStart
-    \resumeProjectHeading
+\resumeProjectHeading
+{\textbf{Bachelor thesis with NVIDIA} $|$ \emph{C++, CUDA, Python}}{Oct. 2022 - Present}
+\resumeItemListStart
+\resumeItem{GPU acceleration of RICE coding and decoding.}
+\resumeItem{Feature aimed at NASA data scientists that use FITS data format compressed with RICE algorithm.}
+\resumeItem{Collaborating with the NVIDIA DALI team on incorporating solution into their data loading library. }
+\resumeItemListEnd
+\vspace{-13pt}
+\resumeProjectHeading
     {\textbf{N-dimenensional labirynth solver} $|$ \emph{C, Valgrind, Cmake,  Git}}{Jun. 2022}
         \resumeItemListStart
           \resumeItem{Developed a high-performance traverser for multi-dimensional mazes/large graphs.}
@@ -209,14 +209,7 @@
           \resumeItemListStart
             \resumeItem{Implemented UNIX file directory system, which allowed for concurrent creation, deletion and movement of files. }
             \resumeItem{Utilized tailored-made readers-writers lock with Latest Common Ancestor writer locking.}
-          \resumeItemListEnd
-         \vspace{-13pt}
-      \resumeProjectHeading
-          {\textbf{JSON based programming language} $|$ \emph{Java, Git, GitLab}}{May. 2021}
-          \resumeItemListStart 
-            \resumeItem{Created custom de/serializer for JSON files representing computer program instructions.}
-            \resumeItem{Used reflection to devise JSON-based programming language, which compiles using the JVM.}
-          \resumeItemListEnd
+\resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-16pt}
 
@@ -225,8 +218,8 @@
 \section{Extracurricular}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{2nd Place}{, PSDC 2020 debating championship, preliminary stage to World Schools Debating Championship.} \\
-     \textbf{Scholarship}{, Polish Children’s Fund ‑ A highly selective mentoring and scholarship program for students.} \\
+\textbf{1st Place}{, Goldman Sachs EMEA Engineering Hackaton 2022} \\
+\textbf{2nd Place}{, PSDC 2020 debating championship, preliminary stage to World Schools Debating Championship.} \\
      \textbf{Laurate}{, 8/1000+ in the 31st National Philosophy Olympiad} \\
     }}
  \end{itemize}
