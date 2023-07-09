@@ -1,0 +1,313 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\footskip}{4.08003pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+  {\Huge \scshape Adam Deryło} \\ \vspace{4pt}
+  % al.Niepodleglosci 165 m.31, Warsaw, Poland  \\ \vspace{1pt}
+  \small \raisebox{-0.1\height}\faPhone\ +48 698 608 344 ~ \href{mailto:a.m.derylo@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{a.m.derylo@gmail.com}} ~
+  \href{https://linkedin.com/in//adamderylo}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/adamderylo}}  ~
+  \href{https://github.com/aderylo}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/aderylo}}
+  % \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Warsaw University}{Oct. 2020 -- Ongoing}
+{Bachelor of Science in Computer Science}{Warsaw, Poland}
+\resumeItemListStart
+\resumeItem{Top rated CS undergraduate program in Poland according to QS ranking.}
+\resumeItem{1st-year modules: Functional Programming, OOP, C, Introduction to AI, Linear Algebra.}
+\resumeItem{2nd-year modules: Adv. Algorithms, Databases, Computer networks, Web Apps, Statistics, NLP.}
+\resumeItem{3rd-year modules: Distributed systems, Concurrency theory,  Security of computer systems.}
+\resumeItem{Rector's scholarship for academic achievements.}
+
+\resumeItemListEnd
+
+\resumeSubheading
+{2SLO High School}{Sep. 2017 -- May. 2020}
+{Computer Science, Mathematics \& Philosophy profile}{Warsaw, Poland}
+\resumeItemListStart
+\resumeItem{Top-4 rated high school in Poland according to Perspektywy ranking.}
+\resumeItem{Laureate of the 2018 Polish Olympiad in Philosophy for high school students.}
+\resumeItem{Scholarship for outstanding academic achievements.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{TSMC}{Jul. 2023 - Sep. 2023}
+{Intern, AI Application \& Platform Department}{Hsinchu, Taiwan}
+\resumeItemListStart
+\resumeItem{AI Application department resonsible for interanl tooling and automation of 200 nm fab.}
+\resumeItem{Working on applicaton of cutting-edge NLP models to improve internal processes.}
+\resumeItem{Developing a tool for aiding R\&D in finding relevant information in
+  the company's internal knowledge base.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Goldman Sachs}{Jun. 2022 - Aug. 2022}
+{Summer Analyst $|$ Redis, Java, Procmon, Golang }{Stockholm, Sweden}
+\resumeItemListStart
+\resumeItem{Global reconciliations team, daily processing of 80+ mln trade \& position data entries.}
+\resumeItem{Collaborated on optimizing caching performance and reliability of data loading processes.}
+\resumeItem{Worked on extending database performance limits with intelligent cache priming based on Change Data Capture.}
+\resumeItem{Developed Redis cache monitoring tool suite to speed up emergency debug and development cycle.}
+\resumeItemListEnd
+
+\resumeSubheading
+{ReSpo.Vision}{Jul. 2021 - May. 2022}
+{Software Engineer Intern $|$  Python, Postgre, Git, SQL, Pytorch}{Warsaw, Poland}
+\resumeItemListStart
+\resumeItem{40+ sprints under the Scrum development framework in a rapidly growing team.}
+\resumeItem{Worked on a back-end implementation of a betting hints generator that withstood 100k API calls daily.}
+\resumeItem{Created a deep learning NLP module using architectures such as BERT.}
+\resumeItem{NLP module tackled the problem of context-dependent noun declination in Slavic languages.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Bain \& Company}{Mar. 2021 - Apr. 2021}
+{Spring Intern $|$ Nielsen, Ipsos, Bain's overlay for MS Office}{Warsaw, Poland}
+\resumeItemListStart
+\resumeItem{Supported a consulting team in the area of wood market data analysis.}
+\resumeItem{Collaborated on a business case under the supervision of a dedicated mentor.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Bachelor thesis with NVIDIA} $|$ \emph{C++, CUDA, Python}}{Oct. 2022 - Present}
+\resumeItemListStart
+\resumeItem{GPU acceleration of image decompression in machine learning workflows.}
+\resumeItem{Constructing a CUDA kernel to enhance the decoding of data encoded using the
+  RICE algorithm.}
+\resumeItem{Project requested by NASA data scientists that use FITS data format compressed with RICE algorithm.}
+\resumeItem{Gained hands-on experience with CUDA virtual memory
+  management, under the guidance of NVIDIA employees.}
+\resumeItemListEnd
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{Minix OS} $|$ \emph{C, Quemu, Bash, rsync}}{Apr. - Jun. 2023}
+\resumeItemListStart
+\resumeItem{Developed various custom features for the Minix OS, including modifying the kernel.}
+\resumeItem{Implemented theoretically optimal scheduler, improving the performance of the system.}
+\resumeItem{Devised an add-on for the virtual file system which introduced file exclusivity mechanism.}
+\resumeItemListEnd
+\vspace{19pt}
+\resumeProjectHeading
+{\textbf{C interpreter} $|$ \emph{Haskell, GHC, Cabal, BNFC}}{Apr. 2023}
+\resumeItemListStart
+\resumeItem{Created an interpreter for a C-like language, called Latte.}
+\resumeItem{Implemented support for scoping, functions, multidimensional arrays, classes and many more.}
+\resumeItem{Developed a parser and lexer for the language using BNFC, employing functors to achive more elegant polymorphism.}
+\resumeItem{Utilized monad transformers to create various features such as garabage collection mechanism for the language.}
+\resumeItemListEnd
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{BEST hacking league} $|$ \emph{React, Python, OpenAI Playground}}{Apr. 2023}
+\resumeItemListStart
+\resumeItem{Earned 2nd place in a hackathon organized by the Board of European Students of Technology.}
+\resumeItem{Developed a voice assistant for Warehouse 4.0 workers.}
+\resumeItem{Extended LLM knowledge base by leveraging a NoSQL database, improving query handling for warehouse layout.}
+\resumeItem{Devised intelligent prompting for a voice assistant, improving context awareness and user experience.}
+\resumeItemListEnd
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{Distributed alerting system} $|$ \emph{Grpc, Google Cloud Platform, Python}}{Nov. 2022 - Jan. 2023}
+\resumeItemListStart
+\resumeItem{Developed scalable microservice system for monitoring services and running complex alerting routines.}
+\resumeItem{Utilized GRPC, PubSub queues, Cloud SQL and other tools to satisfy SLO requirements.}
+\resumeItem{Project supervised by Google employees.}
+\resumeItemListEnd
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{Goldman Sachs EMEA 2022 Hackathon} $|$ \emph{Python, Flask, Git}}{Nov. 2022}
+\resumeItemListStart
+\resumeItem{Achieved first place during a challenging 24-hour hackathon.}
+\resumeItem{Designed and implemented a mock website aimed at enhancing Goldman Sachs' recruitment efforts.}
+\resumeItem{Implemented a stock market simulation game within the tight time constraints of the hackathon.}
+\resumeItem{Contributed to the development of a 3D render for a physical token with a link to the portal.}
+\resumeItemListEnd
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{N-dimensional labyrinth solver} $|$ \emph{C, Valgrind, Cmake,  Git}}{Jun. 2022}
+\resumeItemListStart
+\resumeItem{Developed a high-performance traverser for multidimensional mazes/large graphs.}
+\resumeItem{Utilized most memory efficient solution by incorporating 2-bit BFS algorithm.}
+\resumeItem{Implemented arbitrary large integer type to facilitate enormous labyrinths and showcase memory efficiency.}
+\resumeItemListEnd
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{Concurrent Unix-like directory} $|$ \emph{C, Pthreads, Helgrind, Cmake,  Git}}{Jan. 2022}
+\resumeItemListStart
+\resumeItem{Implemented add-ons to the file system, which allowed for concurrent creation, deletion and movement of files. }
+\resumeItem{Utilized tailored-made readers-writers lock with Latest Common Ancestor writer locking.}
+\resumeItemListEnd
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{Enhancing Splay Tree for pattern search} $|$ \emph{C++, Catch2, Cmake, Bash, Git}}{Dec. 2021}
+\resumeItemListStart
+\resumeItem{Developed an algorithm for efficient search of patterns in DNA sequence.}
+\resumeItem{Utilized a splay tree data structure enhanced with attributes updated through lazy propagation.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%----------Extracurricular------------
+\section{Extracurricular}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+                \textbf{Member}{, Bain \& Company Champions Class 2023} \\
+                \textbf{2nd Place}{, PSDC 2020 debating championship, preliminary stage to World Schools Debating Championship.} \\
+                \textbf{Laureate}{, 8/1000+ in the 31st National Philosophy Olympiad} \\
+          }}
+\end{itemize}
+\vspace{-16pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+                \textbf{Programming Languages}{: Python, Java, C/C++, JavaScript, R,  Ocaml, Go, SQL} \\
+                \textbf{Technologies}{: Git, Fedora/Ubuntu/Debian, Jira, Redis, Docker, Pydantic, React, Cloud Run} \\
+                \textbf{Natural languages}{: English (C2), Polish (Native), Spanish (B1) } \\
+          }}
+\end{itemize}
+\vspace{-16pt}
+
+\end{document}
+
