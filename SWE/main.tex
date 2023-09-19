@@ -1,7 +1,7 @@
 %-------------------------
 % Resume in Latex
 % Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
+% Based off: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
 
@@ -138,20 +138,29 @@
 \resumeSubHeadingListStart
 \resumeSubheading
 {Warsaw University}{Oct. 2020 -- Ongoing}
-{Bachelor of Science in Computer Science}{Warsaw, Poland}
+{Double degree: BSc in Computer Science \& BSc in Philosophy}{Warsaw, Poland}
 \resumeItemListStart
 \resumeItem{Top rated CS undergraduate program in Poland according to QS ranking.}
-\resumeItem{1st-year modules: Functional Programming, OOP, C, Introduction to AI, Linear Algebra.}
-\resumeItem{2nd-year modules: Adv. Algorithms, Databases, Computer networks, Web Apps, Statistics, NLP.}
-\resumeItem{3rd-year modules: Distributed systems, Concurrency theory,  Security of computer systems.}
-
+\resumeItem{Rector's scholarship for academic achievements.}
 \resumeItemListEnd
+
+
 \resumeSubHeadingListEnd
 \vspace{-16pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
+
+\resumeSubheading
+{Taiwan Semiconductor Manufacturing Company}{Jul. 2023 - Sep. 2023}
+{Software Engineering Intern | Pytorch, Huggingface, Scikit-learn, Python }{Hsinchu, Taiwan}
+\resumeItemListStart
+\resumeItem{AAPD team responsible for automation of fab processes.}
+\resumeItem{Collaborated on developing a custom BLIP2 based model for photomask defect detection.}
+\resumeItem{Researched application of Stable Diffusion models for bootstrapping data for DL defect classification models.}
+\resumeItem{Top-8 internship performance among cohort of 80+ interns.}
+\resumeItemListEnd
 
 \resumeSubheading
 {Goldman Sachs}{Jun. 2022 - Aug. 2022}
@@ -169,10 +178,8 @@
 \resumeItemListStart
 \resumeItem{40+ sprints under the Scrum development framework in a rapidly growing team.}
 \resumeItem{Worked on a back-end implementation of a betting hints generator that withstood 100k API calls daily.}
-\resumeItem{Created a deep learning NLP module using cutting-edge architectures such as BERT.}
-\resumeItem{NLP module tackled the problem of context-dependent noun declination in Slavic languages.}
+\resumeItem{Created a deep learning NLP module for context-dependent noun declination.}
 \resumeItemListEnd
-
 
 \resumeSubHeadingListEnd
 \vspace{-16pt}
@@ -182,53 +189,50 @@
 \vspace{-5pt}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{Bachelor thesis with NVIDIA} $|$ \emph{C++, CUDA, Python}}{Oct. 2022 - Present}
+{\textbf{Bachelor thesis with NVIDIA} $|$ \emph{C++, CUDA, Python}}{Oct. 2022 - Jun. 2023}
 \resumeItemListStart
 \resumeItem{GPU acceleration of image decompression in machine learning workflows.}
-\resumeItem{Project aimed at helping NASA data scientists that use FITS data format compressed with RICE algorithm.}
-\resumeItem{Collaborating with the NVIDIA DALI team on incorporating the solution into their data loading library. }
+\resumeItem{Constructing a CUDA kernel to enhance the decoding of data encoded using the
+  RICE algorithm.}
+\resumeItem{Project requested by NASA data scientists that use FITS data format compressed with RICE algorithm.}
+\resumeItem{Gained hands-on experience with CUDA virtual memory
+  management, under the guidance of NVIDIA employees.}
 \resumeItemListEnd
 \vspace{-13pt}
 \resumeProjectHeading
-{\textbf{Distributed alerting system} $|$ \emph{Grpc, Cloud Run, K8, Python}}{Nov. 2022 - Jan. 2023}
+{\textbf{C interpreter} $|$ \emph{Haskell, GHC, Cabal, BNFC}}{Apr. - Jun 2023}
 \resumeItemListStart
-\resumeItem{Developed scallable microservice system for monitoirng services and running complex alerting routines.}
+\resumeItem{Created an interpreter for a C-like language, called Latte.}
+\resumeItem{Implemented support for scoping, functions, multidimensional arrays, classes and many more.}
+\resumeItem{Utilized monad transformers to create various features such as garabage collection mechanism for the language.}
+\resumeItemListEnd
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{Minix OS} $|$ \emph{C, Quemu, Bash, rsync}}{Apr. - Jun. 2023}
+\resumeItemListStart
+\resumeItem{Developed various custom features for the Minix OS, including modifying the kernel.}
+\resumeItem{Implemented theoretically optimal scheduler, improving the performance of the system.}
+\resumeItem{Devised an add-on for the virtual file system which introduced file exclusivity mechanism.}
+\resumeItemListEnd
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{Distributed alerting system} $|$ \emph{Grpc, Google Cloud Platform, Python}}{Nov. 2022 - Jan. 2023}
+\resumeItemListStart
+\resumeItem{Developed scalable microservice system for monitoring services and running complex alerting routines.}
 \resumeItem{Utilized GRPC, PubSub queues, Cloud SQL and other tools to satisfy SLO requirements.}
-\resumeItem{Project supervised by Google employes.}
+\resumeItem{Project supervised by Google employees.}
 \resumeItemListEnd
-\vspace{-13pt}
-\resumeProjectHeading
-{\textbf{Goldman Sachs EMEA 2022 Hackaton} $|$ \emph{Python, Flask, Git}}{Nov. 2022}
-\resumeItemListStart
-\resumeItem{Achieved first place during a challenging 24-hour hackathon.}
-\resumeItem{Designed and implemented a mock website aimed at enhancing Goldman Sachs' recruitment efforts.}
-\resumeItem{Implemented a stock market simulation game within the tight time constraints of the hackathon.}
-\resumeItem{Contributed to the development of a 3D render for a physical token with a link to the portal.}
-\resumeItemListEnd
-\vspace{-13pt}
-\resumeProjectHeading
-{\textbf{N-dimenensional labirynth solver} $|$ \emph{C, Valgrind, Cmake,  Git}}{Jun. 2022}
-\resumeItemListStart
-\resumeItem{Developed a high-performance traverser for multidimensional mazes/large graphs.}
-\resumeItem{Utilized most memory efficient solution by incorporating 2-bit BFS algorithm.}
-\resumeItem{Implemented arbitrary large integer type to facilitate enormous labyrinths and showcase memory efficiency.}
-\resumeItemListEnd
-\vspace{-13pt}
-\resumeProjectHeading
-{\textbf{Concurrent Unix directory} $|$ \emph{C, Pthreads, Helgrind, Cmake,  Git}}{Jan. 2022}
-\resumeItemListStart
-\resumeItem{Implemented UNIX file directory system, which allowed for concurrent creation, deletion and movement of files. }
-\resumeItem{Utilized tailored-made readers-writers lock with Latest Common Ancestor writer locking.}
-\resumeItemListEnd
+\vspace{-5pt}
 \resumeSubHeadingListEnd
-\vspace{-16pt}
+
 
 %----------Extracurricular------------
 \section{Extracurricular}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
+                \textbf{2nd Place}{, BEST Hacking league} \\
                 \textbf{Member}{, Bain \& Company Champions Class 2023} \\
-                \textbf{2nd Place}{, PSDC 2020 debating championship, preliminary stage to World Schools Debating Championship.} \\
+                \textbf{1st Place}{, Goldman Sachs EMEA 2022 Hackathon} \\
                 \textbf{Laureate}{, 8/1000+ in the 31st National Philosophy Olympiad} \\
           }}
 \end{itemize}
