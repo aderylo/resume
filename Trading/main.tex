@@ -1,7 +1,7 @@
 %-------------------------
 % Resume in Latex
 % Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
+% Based off: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
 
@@ -137,21 +137,32 @@
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Warsaw University}{Oct. 2020 -- Ongoing}
-{Bachelor of Science in Computer Science}{Warsaw, Poland}
+{Warsaw University}{Oct. 2020 -- Sep.2024}
+{Double degree: BSc in Computer Science \& BSc in Computational Cognitive Science}{Warsaw, Poland}
 \resumeItemListStart
-\resumeItem{Top rated CS undergraduate program in Poland according to QS ranking.}
-\resumeItem{1st-year modules: Functional Programming, OOP, C, Introduction to AI, Linear Algebra.}
-\resumeItem{2nd-year modules: Adv. Algorithms, Databases, Computer networks, Web Apps, Statistics, NLP.}
-\resumeItem{3rd-year modules: Distributed systems, Concurrency theory,  Security of computer systems.}
-
+\resumeItem{Top rated Computer Sscience undergraduate program in Poland according to QS ranking.}
+\resumeItem{Rector's scholarship for academic achievements.}
+\resumeItem{Planing on pursuing a one-year Master's degree in Computer Science.}
 \resumeItemListEnd
+
+
 \resumeSubHeadingListEnd
 \vspace{-16pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
+
+\resumeSubheading
+{Taiwan Semiconductor Manufacturing Company}{Jul. 2023 - Sep. 2023}
+{Software Engineering Intern | Pytorch, Huggingface, Scikit-learn, Python}{Hsinchu, Taiwan}
+\resumeItemListStart
+\resumeItem{AI Application and Platform Development Team responsible for the automation of fab processes.}
+\resumeItem{Developed custom BLIP2 based model architecture for photomask defect classification and captioning.}
+\resumeItem{Worked on generative model for text to image generation of rare photomask defects.}
+\resumeItem{Devised an asynchronous multistage data pipeline optimizing for efficient VRAM usage and throughput.}
+\resumeItem{Ranked top 8 out of 80+ Interns in the final intern project competition.}
+\resumeItemListEnd
 
 \resumeSubheading
 {Goldman Sachs}{Jun. 2022 - Aug. 2022}
@@ -164,21 +175,11 @@
 \resumeItemListEnd
 
 \resumeSubheading
-{ReSpo.Vision}{Jul. 2021 - May. 2022}
-{Software Engineer Intern $|$  Python, Postgre, Git, SQL, Pytorch}{Warsaw, Poland}
-\resumeItemListStart
-\resumeItem{40+ sprints under the Scrum development framework in a rapidly growing team.}
-\resumeItem{Worked on a back-end implementation of a betting hints generator that withstood 100k API calls daily.}
-\resumeItem{Created a deep learning NLP module using cutting-edge architectures such as BERT.}
-\resumeItem{NLP module tackled the problem of context-dependent noun declination in Slavic languages.}
-\resumeItemListEnd
-
-\resumeSubheading
 {Bain \& Company}{Mar. 2021 - Apr. 2021}
-{Spring Intern $|$ Nielsen, Ipsos, Bain's overlay for MS Office}{Warsaw, Poland}
+{Spring Intern $|$ Nielsen, Ipsos}{Warsaw, Poland}
 \resumeItemListStart
 \resumeItem{Supported a consulting team in the area of wood market data analysis.}
-\resumeItem{Collaborated on a business case under the supervision of a dedicated mentor.}
+\resumeItem{Worked on a team-based business case study under the supervision of a dedicated mentor.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -189,54 +190,48 @@
 \vspace{-5pt}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{Bachelor thesis with NVIDIA} $|$ \emph{C++, CUDA, Python}}{Oct. 2022 - Present}
+{\textbf{Bachelor thesis with NVIDIA} $|$ \emph{C++, CUDA, GPUDirect Storgage, CMake, Python}}{Oct. 2022 - Jun. 2023}
 \resumeItemListStart
-\resumeItem{GPU acceleration of image decompression in machine learning workflows.}
-\resumeItem{Project aimed at helping NASA data scientists that use FITS data format compressed with RICE algorithm.}
-\resumeItem{Collaborating with the NVIDIA DALI team on incorporating the solution into their data loading library. }
+\resumeItem{Worked with NVIDIA DALI team on accelerating image decompression in ML astronomy workflows.}
+\resumeItem{Contributed module to the open-source DALI library, improving the performance of the FITS decoder.}
+\resumeItem{Devised a testing \& profiling pipeline to allow for benchmarking various CUDA kernel optimizations.}
+\resumeItem{Showcased the result by rewriting NASA Coronal Hole Semantic Segmentation pipeline and achieving 70\% speedup.}
+\resumeItemListEnd
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{C interpreter} $|$ \emph{Haskell, GHC, Cabal, BNFC}}{Apr. 2023 - Jun. 2023}
+\resumeItemListStart
+\resumeItem{Created an interpreter for a C-like language, called Latte.}
+\resumeItem{Implemented support for scoping, functions, multidimensional arrays, classes and many more.}
+\resumeItem{Utilized monad transformers to create various features such as garabage collection mechanism for the language.}
+\resumeItemListEnd
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{Minix OS} $|$ \emph{C, Quemu, Bash, rsync}}{Apr. 2023 - Jun. 2023}
+\resumeItemListStart
+\resumeItem{Developed various custom features for the Minix OS, which required modifying the OS kernel extensivly.}
+\resumeItem{Implemented theoretically optimal scheduler, improving the performance of the system.}
+\resumeItem{Devised an add-on for the virtual file system which introduced file exclusivity mechanism.}
 \resumeItemListEnd
 \vspace{-13pt}
 \resumeProjectHeading
 {\textbf{Distributed alerting system} $|$ \emph{Grpc, Google Cloud Platform, Python}}{Nov. 2022 - Jan. 2023}
 \resumeItemListStart
-\resumeItem{Developed scallable microservice system for monitoirng services and running complex alerting routines.}
-\resumeItem{Utilized GRPC, PubSub queues, Cloud SQL and other tools to satisfy SLO requirements.}
-\resumeItem{Project supervised by Google employes.}
+\resumeItem{Developed scalable microservice system for monitoring services and running complex alerting routines.}
+\resumeItem{Utilized GRPC, PubSub queues, Cloud SQL and other tools to satisfy SLO requirements for 10k services.}
+\resumeItem{Project supervised by Google employees.}
 \resumeItemListEnd
-\vspace{-13pt}
-\resumeProjectHeading
-{\textbf{N-dimenensional labirynth solver} $|$ \emph{C, Valgrind, Cmake,  Git}}{Jun. 2022}
-\resumeItemListStart
-\resumeItem{Developed a high-performance traverser for multidimensional mazes/large graphs.}
-\resumeItem{Utilized most memory efficient solution by incorporating 2-bit BFS algorithm.}
-\resumeItem{Implemented arbitrary large integer type to facilitate enormous labyrinths and showcase memory efficiency.}
-\resumeItemListEnd
-\vspace{-13pt}
-\resumeProjectHeading
-{\textbf{Operating system process scheduler} $|$ \emph{C, Quemu, Make, Git}}{May. 2022}
-\resumeItemListStart
-\resumeItem{Implemented multiple processes scheduling algorithms in a Minix microkernel operating system.}
-\resumeItem{Employed Quemu, and Rsync for faster development iterations.}
-\resumeItemListEnd
-\vspace{-13pt}
-\resumeProjectHeading
-{\textbf{Concurrent Unix directory} $|$ \emph{C, Pthreads, Helgrind, Cmake,  Git}}{Jan. 2022}
-\resumeItemListStart
-\resumeItem{Implemented UNIX file directory system, which allowed for concurrent creation, deletion and movement of files. }
-\resumeItem{Utilized tailored-made readers-writers lock with Latest Common Ancestor writer locking.}
-\resumeItemListEnd
+\vspace{-5pt}
 \resumeSubHeadingListEnd
-\vspace{-16pt}
 
 
 %----------Extracurricular------------
 \section{Extracurricular}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
+                \textbf{2nd Place}{, BEST Hacking league 2023 Hackathon} \\
                 \textbf{Member}{, Bain \& Company Champions Class 2023} \\
-                \textbf{1st Place}{, Goldman Sachs EMEA Engineering Hackaton 2022} \\
-                \textbf{2nd Place}{, PSDC 2020 debating championship, preliminary stage to World Schools Debating Championship.} \\
-                \textbf{Laureate}{, 8/1000+ in the 31st National Philosophy Olympiad} \\
+                \textbf{1st Place}{, Goldman Sachs EMEA 2022 Hackathon} \\
           }}
 \end{itemize}
 \vspace{-16pt}
@@ -245,9 +240,9 @@
 \section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-                \textbf{Programming Languages}{: Python, Java, C/C++, JavaScript, R,  Ocaml, Go, SQL} \\
-                \textbf{Technologies}{: Git, Fedora/Ubuntu/Debian, Jira, Redis, Docker, Pydantic, React, Cloud Run} \\
-                \textbf{Natural languages}{: English (C2), Polish (Native), Spanish (B1) } \\
+                \textbf{Programming Languages}{: Python, C/C++, Haskell, Java, JavaScript, R,  Ocaml, Go, SQL} \\
+                \textbf{Technologies}{: Git, Linux, Jira, Redis, Docker, Pydantic, Huggingface, React, Cloud Run} \\
+                \textbf{Languages}{: English (C2), Polish (Native), Spanish (B1) } \\
           }}
 \end{itemize}
 \vspace{-16pt}
