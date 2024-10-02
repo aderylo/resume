@@ -136,16 +136,25 @@
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
+
+% TUM - all accolades
 \resumeSubheading
-{Warsaw University}{Oct. 2020 -- Ongoing}
-{Double degree: BSc in Computer Science \& BSc in Philosophy}{Warsaw, Poland}
+{Technical University of Munich}{Oct. 2024 -- Ongoing}
+{Masters of Informatics}{Munich, Germany}
+\resumeItemListStart
+\resumeItem{Best technical univeisty in Germany according to the QS rating.}
+\resumeItemListEnd
+
+% UW - all accolades
+\resumeSubheading
+{Warsaw University}{Oct. 2020 -- Jul. 2024}
+{Double degree: BSc in Computer Science \& BSc in Cognitive Science}{Warsaw, Poland}
 \resumeItemListStart
 \resumeItem{Top rated CS undergraduate program in Poland according to QS ranking.}
 \resumeItem{1st-year modules: Functional Programming, OOP, C, Introduction to AI, Linear Algebra.}
 \resumeItem{2nd-year modules: Adv. Algorithms, Databases, Computer networks, Web Apps, Statistics, NLP.}
 \resumeItem{3rd-year modules: Distributed systems, Concurrency theory,  Security of computer systems.}
 \resumeItem{Rector's scholarship for academic achievements.}
-
 \resumeItemListEnd
 
 \resumeSubheading
@@ -163,18 +172,33 @@
 \section{Experience}
 \resumeSubHeadingListStart
 
+% Amazon - all 
 \resumeSubheading
-{Taiwan Semiconductor Manufacturing Company}{Jul. 2023 - Sep. 2023}
-{Intern, AI Application \& Platform Department}{Hsinchu, Taiwan}
+{Amazon}{Jun. 2024 - Sep. 2024}
+{SWE Intern}{Madrid, Spain}
 \resumeItemListStart
-\resumeItem{AAPD-01 team responsible for automation of fab processes.}
-\resumeItem{Worked on improving the performance of deep learning models for photomask and die defect detection.}
-\resumeItem{Collaborated on developing a custom BLIP2 based model for defect detection in photomasks.}
-\resumeItem{Researched application of Stable Diffusion models for bootstrapping data for DL defect detection and classification models.}
-\resumeItem{Collaborated on optimizing interference of LLM models inside rule based captioning pipelines.}
-\resumeItem{Top-8 internship performance among cohort of 80+ interns.}
+\resumeItem{NintAI applied science team responsible for ML models faciliating image search at Amazon.}
+\resumeItem{Added several features to the ML inference platofrm as well as developed Web App for it.}
+\resumeItem{Built and deployed the UI infrastructure from scratch using AWS CodePipeline and CodeBuild,
+ ensuring seamless integration with SIGV4 authentication and resolving CORS issues.}
+\resumeItem{Implemented end-to-end tests using NightwatchJS and Selenium Grid, 
+and integrated them into the CI/CD pipeline, establishing cross-account VPC connectivity between test workers and build services.}
+\resumeItem{Utilized AWS CDK for infrastructure as code, alongside AWS services such as 
+API Gateway, CloudWatch, S3, DynamoDB, Lambda, and many more to deploy and monitor the platform.}
 \resumeItemListEnd
 
+% TSMC - all
+\resumeSubheading
+{Taiwan Semiconductor Manufacturing Company}{Jul. 2023 - Sep. 2023}
+{Software Engineering Intern | Pytorch, Huggingface, Scikit-learn, Python}{Hsinchu, Taiwan}
+\resumeItemListStart
+\resumeItem{AI Application and Platform Development Team responsible for the automation of fab processes.}
+\resumeItem{Developed custom BLIP2 based model for photomask defect classification and dataset bootstrapping.}
+\resumeItem{Prototyped the application of Stable Diffusion models for rapidly bootstrapping rare photomask defect data.}
+\resumeItem{Ranked in the top 8 out of 80+ Interns in the final competition.}
+\resumeItemListEnd
+
+% GS - all
 \resumeSubheading
 {Goldman Sachs}{Jun. 2022 - Aug. 2022}
 {Summer Analyst $|$ Redis, Java, Procmon, Golang }{Stockholm, Sweden}
@@ -185,6 +209,7 @@
 \resumeItem{Developed Redis cache monitoring tool suite to speed up emergency debug and development cycle.}
 \resumeItemListEnd
 
+% Respo.Vision - all
 \resumeSubheading
 {ReSpo.Vision}{Jul. 2021 - May. 2022}
 {Software Engineer Intern $|$  Python, Postgre, Git, SQL, Pytorch}{Warsaw, Poland}
@@ -204,23 +229,29 @@
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-\vspace{-16pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
-\vspace{-5pt}
 \resumeSubHeadingListStart
+
 \resumeProjectHeading
-{\textbf{Bachelor thesis with NVIDIA} $|$ \emph{C++, CUDA, Python}}{Oct. 2022 - Present}
+{\textbf{Bachelor thesis at NVIDIA} $|$ \emph{C++, CUDA, CMake, Python}}{Oct. 2022 - Jun. 2023}
 \resumeItemListStart
-\resumeItem{GPU acceleration of image decompression in machine learning workflows.}
-\resumeItem{Constructing a CUDA kernel to enhance the decoding of data encoded using the
-  RICE algorithm.}
-\resumeItem{Project requested by NASA data scientists that use FITS data format compressed with RICE algorithm.}
-\resumeItem{Gained hands-on experience with CUDA virtual memory
-  management, under the guidance of NVIDIA employees.}
+\resumeItem{Worked with NVIDIA DALI team on accelerating image decompression in ML astronomy workflows.}
+\resumeItem{Contributed module to the open-source DALI library, improving the performance of the FITS decoder.}
+\resumeItem{Devised a testing \& profiling pipeline to allow for benchmarking various CUDA kernel optimizations.}
+\resumeItem{Showcased the result by rewriting NASA Coronal Hole Semantic Segmentation pipeline and achieving 70\% speedup.}
 \resumeItemListEnd
-\vspace{-13pt}
+
+
+\resumeProjectHeading
+{\textbf{C interpreter} $|$ \emph{Haskell, GHC, Cabal, BNFC}}{Apr. - Jun 2023}
+\resumeItemListStart
+\resumeItem{Created an interpreter for a C-like language, called Latte.}
+\resumeItem{Implemented support for scoping, functions, multidimensional arrays, classes and many more.}
+\resumeItem{Utilized monad transformers to create various features such as garabage collection mechanism for the language.}
+\resumeItemListEnd
+
 \resumeProjectHeading
 {\textbf{Minix OS} $|$ \emph{C, Quemu, Bash, rsync}}{Apr. - Jun. 2023}
 \resumeItemListStart
@@ -228,16 +259,7 @@
 \resumeItem{Implemented theoretically optimal scheduler, improving the performance of the system.}
 \resumeItem{Devised an add-on for the virtual file system which introduced file exclusivity mechanism.}
 \resumeItemListEnd
-\vspace{19pt}
-\resumeProjectHeading
-{\textbf{C interpreter} $|$ \emph{Haskell, GHC, Cabal, BNFC}}{Apr. 2023}
-\resumeItemListStart
-\resumeItem{Created an interpreter for a C-like language, called Latte.}
-\resumeItem{Implemented support for scoping, functions, multidimensional arrays, classes and many more.}
-\resumeItem{Developed a parser and lexer for the language using BNFC, employing functors to achive more elegant polymorphism.}
-\resumeItem{Utilized monad transformers to create various features such as garabage collection mechanism for the language.}
-\resumeItemListEnd
-\vspace{-13pt}
+
 \resumeProjectHeading
 {\textbf{BEST hacking league} $|$ \emph{React, Python, OpenAI Playground}}{Apr. 2023}
 \resumeItemListStart
@@ -246,15 +268,15 @@
 \resumeItem{Extended LLM knowledge base by leveraging a NoSQL database, improving query handling for warehouse layout.}
 \resumeItem{Devised intelligent prompting for a voice assistant, improving context awareness and user experience.}
 \resumeItemListEnd
-\vspace{-13pt}
+
 \resumeProjectHeading
 {\textbf{Distributed alerting system} $|$ \emph{Grpc, Google Cloud Platform, Python}}{Nov. 2022 - Jan. 2023}
 \resumeItemListStart
 \resumeItem{Developed scalable microservice system for monitoring services and running complex alerting routines.}
-\resumeItem{Utilized GRPC, PubSub queues, Cloud SQL and other tools to satisfy SLO requirements.}
+\resumeItem{Utilized GRPC, PubSub queues, Cloud SQL and other tools to satisfy SLO requirements for 10k services.}
 \resumeItem{Project supervised by Google employees.}
 \resumeItemListEnd
-\vspace{-13pt}
+
 \resumeProjectHeading
 {\textbf{Goldman Sachs EMEA 2022 Hackathon} $|$ \emph{Python, Flask, Git}}{Nov. 2022}
 \resumeItemListStart
@@ -263,7 +285,7 @@
 \resumeItem{Implemented a stock market simulation game as one of the features.}
 \resumeItem{Contributed to the development of a 3D render for a physical token with a link to the portal.}
 \resumeItemListEnd
-\vspace{-13pt}
+
 \resumeProjectHeading
 {\textbf{N-dimensional labyrinth solver} $|$ \emph{C, Valgrind, Cmake,  Git}}{Jun. 2022}
 \resumeItemListStart
@@ -271,14 +293,14 @@
 \resumeItem{Utilized most memory efficient solution by incorporating 2-bit BFS algorithm.}
 \resumeItem{Implemented arbitrary large integer type to facilitate enormous labyrinths and showcase memory efficiency.}
 \resumeItemListEnd
-\vspace{-13pt}
+
 \resumeProjectHeading
 {\textbf{Concurrent Unix-like directory} $|$ \emph{C, Pthreads, Helgrind, Cmake,  Git}}{Jan. 2022}
 \resumeItemListStart
 \resumeItem{Implemented add-ons to the file system, which allowed for concurrent creation, deletion and movement of files. }
 \resumeItem{Utilized tailored-made readers-writers lock with Latest Common Ancestor writer locking.}
 \resumeItemListEnd
-\vspace{-13pt}
+
 \resumeProjectHeading
 {\textbf{Enhancing Splay Tree for pattern search} $|$ \emph{C++, Catch2, Cmake, Bash, Git}}{Dec. 2021}
 \resumeItemListStart
@@ -286,8 +308,6 @@
 \resumeItem{Utilized a splay tree data structure enhanced with attributes updated through lazy propagation.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
-\vspace{-16pt}
-
 
 %----------Extracurricular------------
 \section{Extracurricular}
