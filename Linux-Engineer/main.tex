@@ -1,0 +1,251 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\footskip}{4.08003pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+  {\Huge \scshape Adam Deryło} \\ \vspace{4pt}
+  % al.Niepodleglosci 165 m.31, Warsaw, Poland  \\ \vspace{1pt}
+  \small \raisebox{-0.1\height}\faPhone\ +48 698 608 344 ~ \href{mailto:a.m.derylo@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{a.m.derylo@gmail.com}} ~
+  \href{https://linkedin.com/in/aderylo}{\raisebox{-0.2\height}\faLinkedin\ \underline{aderylo}}  ~
+  \href{https://github.com/aderylo}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/aderylo}} ~
+  \href{https://www.aderylo.com}{\raisebox{-0.2\height}\faGlobe\ \underline{aderylo.com}}
+  \vspace{-5pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+% TUM - all accolades
+\resumeSubheading
+{Technical University of Munich}{Oct. 2024 -- Ongoing}
+{Masters of Informatics}{Munich, Germany}
+\resumeItemListStart
+\resumeItem{Best technical univeisty in Germany according to the QS ranking.}
+\resumeItemListEnd
+
+% UW - all accolades
+\resumeSubheading
+{Warsaw University}{Oct. 2020 -- Jul. 2024}
+{Double degree: BSc in Computer Science \& BSc in Cognitive Science}{Warsaw, Poland}
+\resumeItemListStart
+\resumeItem{Top-rated CS undergraduate program in Poland according to the QS ranking.}
+\resumeItem{Thesis written at NVIDIA and Nencki Institute of Experimental Biology.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+% Amazon
+\resumeSubheading
+{Amazon}{Jun. 2024 - Sep. 2024}
+{Software Engineering Intern | AWS CDK, Typescript, React, Python}{Madrid, Spain}
+\resumeItemListStart
+\resumeItem{NintAi, applied science team, responsible for providing ML modles for visual navigaiton.}
+\resumeItem{Developed and deployed a UI for a ML inference platform, which facilitates image search at Amazon.}
+\resumeItem{Implemented UI infrastructure using AWS CodePipeline, CodeBuild, API Gateway, Lambda, SIGV4 Auth, ect.}
+\resumeItem{Established end-to-end testing with NightwatchJS and Selenium Grid, integrating it into the CI/CD pipeline.}
+\resumeItemListEnd
+
+% TSMC - all
+\resumeSubheading
+{Taiwan Semiconductor Manufacturing Company}{Jul. 2023 - Sep. 2023}
+{Software Engineering Intern | Pytorch, Huggingface, Scikit-learn, Python}{Hsinchu, Taiwan}
+\resumeItemListStart
+\resumeItem{AI Application and Platform Development Team responsible for the automation of fab processes.}
+\resumeItem{Developed custom BLIP2 based model for photomask defect classification and dataset bootstrapping.}
+\resumeItem{Ranked in the top 8 out of 80+ Interns in the final competition.}
+\resumeItemListEnd
+
+% GS - all
+\resumeSubheading
+{Goldman Sachs}{Jun. 2022 - Aug. 2022}
+{Summer Analyst $|$ Redis, Java, Procmon, Golang }{Stockholm, Sweden}
+\resumeItemListStart
+\resumeItem{Global reconciliations team, daily processing of 80+ mln trade \& position data entries.}
+\resumeItem{Worked on extending database performance limits with intelligent cache priming based on Change Data Capture.}
+\resumeItem{Developed Redis cache monitoring tool suite to speed up emergency debug and development cycle.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{ELF Binary Reconstruction Tool} $|$ \emph{C++, Assembly, ELF Format, Reverse Engineering}}{Feb. 2024 - Apr. 2024}
+\resumeItemListStart
+\resumeItem{Developed a program to reconstruct relocation tables and symbols from stripped ELF executables.}
+\resumeItem{Implemented heuristic algorithms for function boundary detection and instruction classification.}
+\resumeItem{Designed solution for i386 architecture binaries compiled for Intel Quark microcontrollers.}
+\resumeItem{Such reconstruction allows for modifying parts of compiled code without hassles of full decompilation.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Hearts Game Server} $|$ \emph{C, TCP/IP, Multithreading, Protocol Design}}{Apr. 2024 - May 2024}
+\resumeItemListStart
+\resumeItem{Implemented a TCP server for Hearts game, directly using POSIX system calls for networking}.
+\resumeItem{Developed robust serialization and deserialization of socket data with timeout mechanics.}
+\resumeItem{Created a flexible game engine capable of handling various Hearts rule variations.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Distributed alerting system} $|$ \emph{Grpc, Google Cloud Platform, Python}}{Nov. 2022 - Jan. 2023}
+\resumeItemListStart
+\resumeItem{Developed scalable microservice system for monitoring services and running complex alerting routines.}
+\resumeItem{Utilized GRPC, PubSub queues, Cloud SQL and other tools to satisfy SLO requirements for 10k services.}
+\resumeItem{Project supervised by Google employees.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------Extracurricular------------
+\section{Extracurricular}
+\begin{itemize}[leftmargin=0.35in]
+  \small{\item{Rock climbing varsity team.}}
+  \vspace{-7pt}
+  \small{\item{Bain \& Company Champions Class 2023.}}
+  \vspace{-7pt}
+  \small{\item{Laureate of the 31st National Philosophy Olympiad.}}
+\end{itemize}
+\vspace{-16pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+                \textbf{Programming Languages}{: C/C++, Python, Typescript, Haskell, Go, Bash, Lua, System Verilog} \\
+                \textbf{Technologies}{: Nvim, Qemu, Git, Linux, Tmux, Gdb, CMake, CDK, React} \\
+                \textbf{Natural languages}{: English (C2), Polish (Native), Spanish (B1), German (A1) } \\
+          }}
+\end{itemize}
+\vspace{-16pt}
+
+\end{document}
+
