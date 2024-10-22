@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Jake Gutierrez
+% Author : Adam Derylo 
 % Based off: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
@@ -95,8 +95,8 @@
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & \textbf{\small #2}\\
     \end{tabular*}\vspace{-7pt}
 }
@@ -127,8 +127,9 @@
   {\Huge \scshape Adam Deryło} \\ \vspace{4pt}
   % al.Niepodleglosci 165 m.31, Warsaw, Poland  \\ \vspace{1pt}
   \small \raisebox{-0.1\height}\faPhone\ +48 698 608 344 ~ \href{mailto:a.m.derylo@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{a.m.derylo@gmail.com}} ~
-  \href{https://linkedin.com/in//adamderylo}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/adamderylo}}  ~
-  \href{https://github.com/aderylo}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/aderylo}}
+  \href{https://linkedin.com/in/aderylo}{\raisebox{-0.2\height}\faLinkedin\ \underline{aderylo}}  ~
+  \href{https://github.com/aderylo}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/aderylo}} ~
+  \href{https://www.aderylo.com}{\raisebox{-0.2\height}\faGlobe\ \underline{aderylo.com}}
   % \vspace{-8pt}
 \end{center}
 
@@ -136,144 +137,153 @@
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
+
+% TUM - all accolades
 \resumeSubheading
-{Warsaw University}{Oct. 2020 -- Sep. 2024}
-{BSc in Computer Science}{Warsaw, Poland}
+{Technical University of Munich}{Oct. 2024 -- Ongoing}
+{Masters of Informatics}{Munich, Germany}
 \resumeItemListStart
-\resumeItem{Top-rated Computer Science undergraduate program in Poland according to the QS ranking.}
-\resumeItem{Rector's scholarship for academic achievements.}
+\resumeItem{Best technical univeisty in Germany according to the QS ranking.}
 \resumeItemListEnd
 
+% UW - all accolades
 \resumeSubheading
-{Warsaw University}{Oct. 2020 -- Sep. 2024}
-{BSc in Cognitive Science}{Warsaw, Poland}
+{Warsaw University}{Oct. 2020 -- Jul. 2024}
+{Double degree: BSc in Computer Science \& BSc in Cognitive Science}{Warsaw, Poland}
 \resumeItemListStart
-\resumeItem{Interdisciplinary program organized by the best faculties in Poland in their respective domains.}
-\resumeItem{Collaboration with the Nencki Research Institute.}
+\resumeItem{Best CS program in Poland according to the QS ranking.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 \vspace{-16pt}
 
 %-----------EXPERIENCE-----------
-\section{Professional experience}
+\section{Experience}
 \resumeSubHeadingListStart
 
+% Amazon
+\resumeSubheading
+{Amazon}{Jun. 2024 - Sep. 2024}
+{Software Engineering Intern | AWS CDK, Typescript, React, Python}{Madrid, Spain}
+\resumeItemListStart
+\resumeItem{NintAi, applied science team, responsible for providing ML modles for visual navigaiton.}
+\resumeItem{Developed and deployed a UI for a ML inference platform, which facilitates image search at Amazon.}
+\resumeItem{Implemented UI infrastructure using AWS CodePipeline, CodeBuild, API Gateway, Lambda, SIGV4 Auth, ect.}
+\resumeItem{Established end-to-end testing with NightwatchJS and Selenium Grid, integrating it into the CI/CD pipeline.}
+\resumeItemListEnd
+
+% TSMC - all
 \resumeSubheading
 {Taiwan Semiconductor Manufacturing Company}{Jul. 2023 - Sep. 2023}
-{Software Engineering Intern | Pytorch, Scikit-learn, Python}{Hsinchu, Taiwan}
+{Software Engineering Intern | Pytorch, Huggingface, Scikit-learn, Python}{Hsinchu, Taiwan}
 \resumeItemListStart
 \resumeItem{AI Application and Platform Development Team responsible for the automation of fab processes.}
-\resumeItem{Developed a custom BLIP2-based model architecture for photomask defect classification and captioning.}
-\resumeItem{Worked on a generative model for text-to-image generation of rare photomask defects.}
-\resumeItem{Devised an asynchronous multistage data pipeline optimizing for efficient VRAM usage and throughput.}
-\resumeItem{Ranked top 8 out of more than 80 interns in the final intern project competition.}
+\resumeItem{Developed custom BLIP2 based model for photomask defect classification and dataset bootstrapping.}
+\resumeItem{Ranked in the top 8 out of 80+ Interns in the final project competition.}
 \resumeItemListEnd
 
+% GS - all
 \resumeSubheading
 {Goldman Sachs}{Jun. 2022 - Aug. 2022}
-{Summer Analyst | Redis, Java, Procmon, Golang}{Stockholm, Sweden}
+{Summer Analyst $|$ Redis, Java, Procmon, Golang }{Stockholm, Sweden}
 \resumeItemListStart
-\resumeItem{Global reconciliations team, daily processing of over 80 million trade and position data entries.}
+\resumeItem{Global reconciliations team, daily processing of 80+ mln trade \& position data entries.}
 \resumeItem{Collaborated on optimizing caching performance and reliability of data loading processes.}
 \resumeItem{Worked on extending database performance limits with intelligent cache priming based on Change Data Capture.}
-\resumeItem{Developed a Redis cache monitoring tool suite to speed up emergency debugging and development cycles.}
-\resumeItemListEnd
-
-\resumeSubheading
-{ReSpo.Vision}{Jul. 2021 - May. 2022}
-{Software Engineer Intern | Python, PostgreSQL, Git, SQL, Pytorch}{Warsaw, Poland}
-\resumeItemListStart
-\resumeItem{Participated in over 40 sprints under the Scrum development framework in a rapidly growing team.}
-\resumeItem{Worked on a back-end implementation of a betting hints generator that withstood 100k API calls daily.}
-\resumeItem{Created a deep learning NLP module for context-dependent noun declination.}
-\resumeItemListEnd
-
-\resumeSubheading
-{Bain \& Company}{Mar. 2021 - Apr. 2021}
-{Spring Intern | Nielsen, Ipsos}{Warsaw, Poland}
-\resumeItemListStart
-\resumeItem{Supported a consulting team in the area of wood market data analysis.}
-\resumeItem{Participated in a team-based business case study under the supervision of a dedicated mentor.}
+\resumeItem{Developed Redis cache monitoring tool suite to speed up emergency debug and development cycle.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-\vspace{-16pt}
-
 
 %-----------PROJECTS-----------
 \section{Projects}
-\vspace{-5pt}
+\vspace{5pt}
 \resumeSubHeadingListStart
+
 \resumeProjectHeading
-{\textbf{Bachelor thesis at Nencki Institute} $|$ \emph{Python, Pytorch, Tianshou} }{Nov. 2023 - Ongoing}
+{\textbf{Bachelor thesis at Nencki Institute} $|$ \emph{Python, Pytorch, Tianshou, SLURM, Wandb} }{Nov. 2023 - Oct. 2024}
 \resumeItemListStart
 \resumeItem{Collaborated on computational neuroscience research at the Nencki Institute of Experimental Biology.}
-\resumeItem{Enhanced a novel reinforcement learning model of the dopaminergic circuit.}
-\resumeItem{Developed and optimized learning rules for Spiking Neural Networks, improving convergence of SNN based agents.}
-\resumeItem{Contributed to extensive literature review done by the research team.}
+\resumeItem{Co-developed a reinforcement learning model of the dopaminergic circuit.}
+\resumeItem{Conducted experiments on HPC cluster, using SLURM for scheduling and Wandb for monitoring.}
 \resumeItemListEnd
-\vspace{-13pt}
+
 \resumeProjectHeading
-{\textbf{Bachelor thesis with NVIDIA} $|$ \emph{C++, CUDA, CMake, Python}}{Oct. 2022 - Jun. 2023}
+{\textbf{Bachelor thesis at NVIDIA} $|$ \emph{C++, CUDA, CMake, Python}}{Oct. 2022 - Jun. 2023}
 \resumeItemListStart
-\resumeItem{Worked with NVIDIA DALI team on accelerating image decompression on GPUs.}
-\resumeItem{Contributed a module to the open-source DALI library, improving the performance of the FITS decoder.}
-\resumeItem{Worked with hardware features such as GPU Direct Storage to improve performance over the baseline CUDA kernel.}
-\resumeItem{Devised a testing \& profiling pipeline to allow for benchmarking various approaches to optimization.}
-\resumeItem{Showcased the result by rewriting NASA's Coronal Hole Semantic Segmentation pipeline and achieving a 70\% speedup.}
+\resumeItem{Worked with NVIDIA DALI team on accelerating image decompression in ML astronomy workflows.}
+\resumeItem{Contributed module to the open-source DALI library, improving the performance of the FITS decoder.}
+\resumeItem{Devised a testing \& profiling pipeline to allow for benchmarking various CUDA kernel optimizations.}
+\resumeItem{Showcased the result by rewriting NASA Coronal Hole Semantic Segmentation pipeline and achieving 70\% speedup.}
 \resumeItemListEnd
-\vspace{-13pt}
-\newpage
+
 \resumeProjectHeading
 {\textbf{Deep Neural Networks} $|$ \emph{Python, Pytorch, Tensorboard}}{Nov. 2023 - Jan. 2024}
 \resumeItemListStart
-\resumeItem{Recreated implementations of several breakthrough machine learning publications.}
-\resumeItem{Implemented following papers from scratch: 
+\resumeItem{Implemented following ML papers: 
 \begin{list}{$\circ$}{}
   \item "The Reversible Residual Network: Backpropagation Without Storing Activations"
-  \item "PaDiM: a Patch Distribution Modeling Framework for Anomaly Detection and Localization
+  \item "PaDiM: a Patch Distribution Modeling Framework for Anomaly Detection and Localization"
   \item "Attention is all you need"
   \item "Bigger, Better, Faster: Human-level Atari with human-level efficiency"
 \end{list} }
 \resumeItem{Scored highest mark awarded to the best 5\% of course participants.}
 \resumeItemListEnd
-\vspace{-13pt}
+
 \resumeProjectHeading
-{\textbf{C interpreter} $|$ \emph{Haskell, GHC, Cabal, BNFC}}{Apr. 2023 - Jun. 2023}
+{\textbf{ELF Binary Reconstruction Tool} $|$ \emph{C++, Assembly, ELF Format, Reverse Engineering}}{Feb. 2024 - Apr. 2024}
+\resumeItemListStart
+\resumeItem{Developed a program to reconstruct relocation tables and symbols from stripped ELF executables.}
+\resumeItem{Implemented heuristic algorithms for function boundary detection and instruction classification.}
+\resumeItem{Designed solution for i386 architecture binaries compiled for Intel Quark microcontrollers.}
+\resumeItem{Such reconstruction allows for modifying parts of compiled code without hassles of full decompilation.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Hearts Game Server} $|$ \emph{C, TCP/IP, Multithreading, Protocol Design}}{Apr. 2024 - May 2024}
+\resumeItemListStart
+\resumeItem{Implemented a TCP server for Hearts game, directly using system calls for networking needs}.
+\resumeItem{Developed robust serialization and deserialization of socket data with timeout mechanics.}
+\resumeItem{Created a flexible game engine capable of handling various Hearts rule variations.}
+\resumeItem{Applied concepts from Beej's Guide to optimize server performance.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{C interpreter} $|$ \emph{Haskell, GHC, Cabal, BNFC}}{Apr. - Jun 2023}
 \resumeItemListStart
 \resumeItem{Created an interpreter for a C-like language, called Latte.}
-\resumeItem{Implemented support for scoping, functions, multidimensional arrays, classes, and more.}
-\resumeItem{Utilized monad transformers to create various features such as a garbage collection mechanism for the language.}
+\resumeItem{Implemented support for scoping, functions, multidimensional arrays, classes and many more.}
+\resumeItem{Utilized monad transformers to create various features such as garabage collection mechanism for the language.}
 \resumeItemListEnd
-\vspace{-13pt}
+
 \resumeProjectHeading
-{\textbf{Minix OS} $|$ \emph{C, Qemu, Bash, rsync}}{Apr. 2023 - Jun. 2023}
+{\textbf{Minix OS} $|$ \emph{C, Quemu, Bash, rsync}}{Apr. - Jun. 2023}
 \resumeItemListStart
-\resumeItem{Developed various custom features for the Minix OS, which required extensively modifying the OS kernel.}
-\resumeItem{Implemented a theoretically optimal scheduler, improving the performance of the system.}
-\resumeItem{Devised an add-on for the virtual file system that introduced a file exclusivity mechanism.}
+\resumeItem{Developed various custom features for the Minix OS, including modifying the kernel.}
+\resumeItem{Implemented theoretically optimal scheduler, improving the performance of the system.}
+\resumeItem{Devised an add-on for the virtual file system which introduced file exclusivity mechanism.}
 \resumeItemListEnd
-\vspace{-13pt}
+
 \resumeProjectHeading
-{\textbf{Distributed alerting system} $|$ \emph{gRPC, Google Cloud Platform, Python}}{Nov. 2022 - Jan. 2023}
+{\textbf{Distributed alerting system} $|$ \emph{Grpc, Google Cloud Platform, Python}}{Nov. 2022 - Jan. 2023}
 \resumeItemListStart
-\resumeItem{Developed a scalable microservice system for monitoring services and running complex alerting routines.}
-\resumeItem{Utilized gRPC, PubSub queues, Cloud SQL, and other tools to satisfy SLO requirements for 10k services.}
+\resumeItem{Developed scalable microservice system for monitoring services and running complex alerting routines.}
+\resumeItem{Utilized GRPC, PubSub queues, Cloud SQL and other tools to satisfy SLO requirements for 10k services.}
 \resumeItem{Project supervised by Google employees.}
 \resumeItemListEnd
-\vspace{-5pt}
-\resumeSubHeadingListEnd
 
+\resumeSubHeadingListEnd
 
 %----------Extracurricular------------
 \section{Extracurricular}
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-                \textbf{2nd Place}{, BEST Hacking league 2023 Hackathon} \\
-                \textbf{Member}{, Bain \& Company Champions Class 2023} \\
-                \textbf{1st Place}{, Goldman Sachs EMEA 2022 Hackathon} \\
-          }}
+\begin{itemize}[leftmargin=0.35in]
+  \small{\item{Rock climbing varsity team.}}
+  \vspace{-7pt}
+  \small{\item{1st place, Goldman Sachs EMEA 2022 Hackathon.}}
+  \vspace{-7pt}
+  \small{\item{Bain \& Company Champions Class 2023.}}
+  \vspace{-7pt}
+  \small{\item{Laureate of the 31st National Philosophy Olympiad.}}
 \end{itemize}
 \vspace{-16pt}
 
@@ -281,12 +291,13 @@
 \section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-                \textbf{Programming Languages}{: Python, C/C++, Haskell, Java, JavaScript, R,  Ocaml, Go, SQL} \\
-                \textbf{Technologies}{: Git, Linux, Jira, Redis, Docker, Pydantic, Huggingface, React, Cloud Run} \\
-                \textbf{Natural languages}{: English (C2), Polish (Native), Spanish (B1) } \\
+                \textbf{Programming Languages}{: C/C++, Python, Typescript, Haskell, Go, Bash, Lua, System Verilog} \\
+                \textbf{Technologies}{: Nvim, Qemu, Git, Linux, Tmux, Gdb, CMake, CDK, React} \\
+                \textbf{Natural languages}{: English (C2), Polish (Native), Spanish (B1), German (A1) } \\
           }}
 \end{itemize}
-\vspace{-20pt}
+\vspace{-16pt}
+
 
 \end{document}
 
